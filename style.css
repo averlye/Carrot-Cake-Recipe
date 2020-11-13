@@ -1,0 +1,156 @@
+html,
+body {
+  font-family: calibri;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+ul.recipe-times li {
+    display: inline;
+    font-weight: 600;
+    font-size: 100%;
+    font-weight: 400;
+}
+ul.recipe-times {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.header-image {
+  /* The image used */
+  background: url(https://food-images.files.bbci.co.uk/food/recipes/ginger_and_walnut_carrot_68622_16x9.jpg) 130% 50%;
+  padding:18%;
+  /* Add the blur effect */
+  filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/* Position text in the middle of the page/image */
+.header-text {
+  background-color: rgba(228, 160, 34, 0.534); /* Black w/opacity/see-through */
+  color: white;
+  border: 1px solid #f1f1f1;
+  position: absolute;
+  top: 42%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  padding: 0.1%;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+h1 {
+  text-transform: uppercase;
+}
+/*h1 {
+  background: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fassets.marthastewart.com%2Fstyles%2Fwmax-750%2Fd43%2Fhummingbird-carrot-cake-352145e6-0420-horiz%2Fhummingbird-carrot-cake-352145e6-0420-horiz.jpg%3Fitok%3DW4OCU5El) 130% 50% no-repeat;
+  padding:15%;
+  color: saddlebrown;
+  font-weight: 400;
+}*/
+hr {
+  border-top: red;
+}
+.bold {
+  font-weight: bold;
+}
+.times {
+  color: gray;
+}
+.directions {
+  text-align: left;
+}
+.ingredients {
+  width: 30%;
+}
+.calories {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 90%;
+}
+.nutrition {
+  color: gray;
+  font-weight: light;
+  text-transform: lowercase;
+  font-size: 80%;
+}
+
+/*CHECKMARK CUSTOMIZATION*/
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 10%;
+  cursor: pointer;
+  font-size: 90%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: darkorange;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 35%;
+  top: 20%;
+  width: 30%;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+* {
+  box-sizing: border-box;
+}
