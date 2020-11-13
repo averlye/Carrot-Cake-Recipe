@@ -1,101 +1,98 @@
-html,
 body {
-  font-family: calibri;
-  margin-left: 5%;
-  margin-right: 5%;
+  font-family: calibri,arial;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 }
-ul.recipe-times li {
-    display: inline;
-    font-weight: 600;
-    font-size: 100%;
-    font-weight: 400;
-}
-ul.recipe-times {
-    display: inline;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-}
-.header-image {
-  /* The image used */
-  background: url(https://food-images.files.bbci.co.uk/food/recipes/ginger_and_walnut_carrot_68622_16x9.jpg) 130% 50%;
-  padding:18%;
-  /* Add the blur effect */
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/*polaroid picture*/
+
+div.polaroid {
+  width: 55%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0 auto;
 }
-
-/* Position text in the middle of the page/image */
-.header-text {
-  background-color: rgba(228, 160, 34, 0.534); /* Black w/opacity/see-through */
-  color: white;
-  border: 1px solid #f1f1f1;
-  position: absolute;
-  top: 42%;
-  left: 23%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 30%;
-  padding: 0.1%;
+div.container-carrotcake {
+  padding: 30px 20px;
   text-align: center;
-  font-weight: 400;
-  letter-spacing: 4px;
+  margin: 0 auto;
 }
+.header-image {
+  background-size: 60%;
+  width: 60%;
+  height: 80%;
+}
+
+/*end of polaroid picture*/
+
 h1 {
+  font-size: 150%;
+  font-family: calibri;
+  font-weight: light;
   text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  padding: 2px;
 }
-/*h1 {
-  background: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fassets.marthastewart.com%2Fstyles%2Fwmax-750%2Fd43%2Fhummingbird-carrot-cake-352145e6-0420-horiz%2Fhummingbird-carrot-cake-352145e6-0420-horiz.jpg%3Fitok%3DW4OCU5El) 130% 50% no-repeat;
-  padding:15%;
-  color: saddlebrown;
-  font-weight: 400;
-}*/
-hr {
-  border-top: red;
+.container-carrotcake p {
+  font-size: 90%;
+  color: gray;
+  display: inline;
 }
 .bold {
-  font-weight: bold;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 95%;
 }
-.times {
-  color: gray;
+#overview p {
+  font-size: 100%;
+  text-align: center;
+  padding: 3px;
+  margin: auto;
 }
-.directions {
-  text-align: left;
-}
-.ingredients {
+#overview {
+  background-color: antiquewhite;
   width: 30%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  padding: 20px;
 }
-.calories {
+#ingredients-list {
+  background-color: blanchedalmond;
+  width: 60%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h2 {
   text-transform: uppercase;
-  color: gray;
-  font-size: 90%;
+  letter-spacing: 2px;
+  font-size: 120%;
 }
-.nutrition {
-  color: gray;
-  font-weight: light;
-  text-transform: lowercase;
-  font-size: 80%;
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 100%;
+  line-height: 1.6;
+  color: maroon;
 }
-
 /*CHECKMARK CUSTOMIZATION*/
 
 /* Customize the label (the container) */
 .container {
   display: block;
   position: relative;
-  padding-left: 10%;
   cursor: pointer;
   font-size: 90%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Hide the browser's default checkbox */
@@ -110,21 +107,22 @@ hr {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
+  text-align: center;
   top: 0;
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #eee;
+  background-color: floralwhite;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: lightgoldenrodyellow;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: darkorange;
+  background-color: orange;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -141,8 +139,8 @@ hr {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 35%;
-  top: 20%;
+  left: 25%;
+  top: 10%;
   width: 30%;
   height: 7px;
   border: solid white;
@@ -150,7 +148,81 @@ hr {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  line-height: 1.6;
 }
-* {
-  box-sizing: border-box;
+#preparation-list {
+  background-color: bisque;
+  width: 60%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 90%;
+}
+.steps-batter {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+#nutrition {
+  background-color: burlywood;
+  width: 60%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 80%;
+}
+.nutrition-details {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 0.5;
+}
+footer {
+  font-size: 70%;
+  color: gray;
+  line-height: 1;
+}
+/* Phone size */
+@media screen and (max-width: 768px) {
+ body {
+  font-family: calibri, Droid Sans;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+ }
+  div.polaroid {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  }
+  div.container-carrotcake {
+  padding: 30px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+  .header-image {
+  background-size: 60%;
+  width: 60%;
+  height: 80%;
+} 
+  #overview {
+  width: 60%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  padding: 20px;
+}
+  #ingredients-list {
+  width: 90%;
+}
+  .container {
+  font-size: 100%;
+  width: 85%;
+}
+#preparation-list {
+  width: 90%;
+}
+#preparation-list {
+  font-size: 100%;
+}
 }

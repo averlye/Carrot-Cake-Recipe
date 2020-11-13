@@ -3,40 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Carrot Cake Recipe</title>
+    <title>Carrot Cake Receip</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
-    <header><hr>
-      <div class="header-image"></div>
-      <div class="header-text">
+    <header>
+      <div class="polaroid">
+      <img class=" header-image" src="https://i.imgur.com/KuBw1CA.jpg" alt="A piece of carrot cake." style="width:100%" width="50%" height="50%" />
+      <div class="container-carrotcake">
         <h1>Carrot Cake</h1>
-          <p>A piece of heaven.</p>
+        <p class="header-heaven">A piece of heaven.</p>
       </div>
-          <!-- <h1 style="background-color:antiquewhite">Carrot Cake</h1><hr> -->
+      </div>
     </header>
-    <div class="times"><br><!-- Top details-->
-        <ul class="recipe-times">
-          <li class="prep-time"><span class="bold">PREP</span><time> 20 min  </time></li>
-          <li class="cook-time"><span class="bold"> COOK </span><time> 45 min  </time></li>
-          <li class="total-time"><span class="bold"> TOTAL</span><time> 1 hr 5 min</time></li>
-        </ul><br>
-    </div>
-    <div="decription">
-      <p>This is the best carrot cake recipe I have ever used! You can make one double layered cake out of it.</p>
-    </div>
-    <table>
-      <thead>
-        <td></td>
-        <td></td>
-      </thead>
-      <tr>       
-        <td class="ingredients"><!--Ingrediends part of the table-->
-        <div="ingredients">
-          <p>Just a few ingredients before we start!</p>
-          <h3 class="ingredient-heading">For carrot cake</h3>
-           <label class="container"><input type="checkbox" checked="checked"><span class="checkmark"></span>250 grams all-purpose flour</label><br>
+    <main>
+          <!-- Top details-->
+      <section>
+        <div id="overview">
+          <table>
+            <p><span class="bold">PREP</span> 20 min</p>
+            <p><span class="bold">COOK</span> 45 min</p>
+            <p><span class="bold">TOTAL</span> 1 hr 5 min</p>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div id="ingredients-list">
+        <h2><br>Ingredients</h2>
+        <h3>For carrot cake</h3>
+           <label class="container"><input type="checkbox"><span class="checkmark"></span>250 grams all-purpose flour</label><br>
            <label class="container"><input type="checkbox" ><span class="checkmark"></span>2 teaspoons baking soda</label><br>
            <label class="container"><input type="checkbox" "><span class="checkmark"></span>1/2 teaspoon sea salt</label><br>
            <label class="container"><input type="checkbox"><span class="checkmark"></span>1 1/2 teaspoons ground cinnamon</label><br>
@@ -44,27 +39,55 @@
            <label class="container"><input type="checkbox"><span class="checkmark"></span>200 grams granulated sugar</label><br>
            <label class="container">1 teaspoon vanilla extract<input type="checkbox"><span class="checkmark"></span></label><br>
            <label class="container">4 large eggs<input type="checkbox"><span class="checkmark"></span></label><br>
-           <label class="container">300 grams grated peeled carrots (5 to 6 medium carrots<input type="checkbox"><span class="checkmark"></span></label><br>
-           <label class="container">100 grams chopped pecans<input type="checkbox"><span class="checkmark"></span></label><br>
-           <label class="container">65 grams raisins<input type="checkbox"><span class="checkmark"></span></label><br>
-          <h3 class="ingredients-frosting">For the frosting</h3>
-          </div>
-          <br><br><br>
-          <div="calories">
-            <span class="calories">Nutritions</span>
-            <p class="nutrition">Per serving: Serving Size 1 slice (1/16)<br>Calories:535<br>Fat 33.4g<br>Saturated Fat 6.9g<br>Carbohydrate 56.4g<br>Dietary Fiber 2.4g<br>Total Sugars 40.5g<br>Protein 5.6g</p>
-          </td>
-          <td class="directions">
-            <div="directions">
-              <span class="dough">Batter</span>
-              <p>Heat the oven to 350 degrees Fahrenheit (176C). Grease two 9-inch round cake pans and line the bottom with parchment paper then grease the top of the paper. Or, grease and flour the bottom and sides of both pans.<br>In a medium bowl, whisk flour, baking soda, salt, and the cinnamon until well blended.<br>In a separate bowl, whisk the oil, sugars, and vanilla. Whisk in eggs, one at a time, until combined.<br>Switch to a large rubber spatula. Scrape the sides and bottom of the bowl then add the dry ingredients in 3 parts, gently stirring until they disappear and the batter is smooth. Stir in the carrots, nuts, and raisins.<p>
-              <span class="dough">Bake</span>
-              <p>Divide the batter between the prepared cake pans. Bake until the tops of the cake layers are springy when touched and when a toothpick inserted into the center of the cake comes out clean, 35 to 45 minutes.<p>Cool cakes in pans for 15 minutes then turn out onto cooling racks, peel off parchment paper and cool completely. (If you find that a cake layer is stuck to the bottom of the pan, leave the cake pan upside down and allow gravity to do its thing).
-              <span class="dough">Last steps</span>
-              <p>In a large bowl, beat cream cheese with a handheld mixer on medium speed until creamy, about 1 minute.<br>Beat in the powdered sugar, a 1/4 cup at a time until fluffy. Pour in cream and beat on medium speed for 1 minute. Chill covered until ready to frost cake.<br>When the cake layers are completely cool, frost the top of one cake layer, place the other cake layer on top. Decoratively swirl the top of the cake with remaining frosting, leaving the sides unfrosted. Scatter nuts on top.
-            </div>
-          </td>
-        </tr>
-      </table>
+           <label class="container">300 grams grated peeled carrots <br>(5 to 6 medium carrots<input type="checkbox"><span class="checkmark"></span></label><br>
+           <label class="container">100 grams chopped nuts<input type="checkbox"><span class="checkmark"></span></label>
+        <h3>For the frosting</h3>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>225 grams of cream cheese</label><br>
+          <label class="container"><input type="checkbox"><span class="checkmark"></span>140 grams powdered sugar</label><br>
+      </div>
+      </section>
+      <section>
+        <div id="preparation-list">
+          <h2><br>Preparation</h2>
+          <p class="steps-batter">Heat the oven to 180 Celcius degrees. <br>Grease and flour the bottom and sides of a 22cm cake pan.</p>
+          <h3>Batter</h3>
+          <p class="steps-batter">In a medium bowl mix: flour, baking soda, salt and cinnamon until well-blended.</p>
+          <p class="steps-batter">In a separate bowl mix: oil, sugar and vanilla. Whisk in eggs, one at a time, until combined.</p> 
+          <p class="steps-batter">Scrape sides and bottom of the bowl with wet ingredients.</p>
+          <p class="steps-batter">Add dry ingredients in 3 parts, gently stirring until they disappear and your batter is smooth.</p>
+          <p class="steps-batter">Stir in grated carrots, nuts or raisins.</p>
+          <h3>Moving on</h3>
+          <p class="steps-batter">Put batter into the greased and flouered pan.</p> 
+          <p class="steps-batter">Bake until the top of the cake is springy when touched and when a toothpick inserted into the center of the cake comes out clean - <span class="bold">35 to 45 minutes</span>.</p>
+          <p class="steps-batter">Cool the cake in a pan for 15 minutes after baking, then turn around, take out of the form and cool the other side.</p>
+          <h3>Last steps</h3>
+          <p class="steps-batter">In a large bowl beat cream cheese with a handheld mixer on medium speed until creamy - <span class="bold"> about 1 minute</span>.
+          <p class="steps-batter">Beat in the powdered sugar, a 1/4 cup at a time until fluffy.</p>
+          <p class="steps-batter">Chill covered until ready to frost cake.</p>
+          <p class="steps-batter">When the cake is completely cool cut in half to create two layers.</p>
+          <p class="steps-batter">Frost the top of one cake layer, place the other cake layer on top.</p><br>
+        </div>
+      </section>
+      <section>
+        <div id="nutrition">
+          <h3><br>Per serving:</h3>
+            <span class="bold">Serving Size: <br>1 slice (1/16)</span><br>
+            <p class="nutrition-details">Calories: 535<br>
+            <p class="nutrition-details">Fat 33.4g<br>
+            <p class="nutrition-details">Saturated Fat 6.9g<br>
+            <p class="nutrition-details">Carbohydrate 56.4g<br>
+            <p class="nutrition-details">Dietary Fiber 2.4g<br>
+            <p class="nutrition-details">Total Sugars 40.5g<br>
+            <p class="nutrition-details">Protein 5.6g</p><br>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>This website was brought to you by Alicja.<br>25th April 2020</p>
+      <p>Recipe sourced <a href="https://www.inspiredtaste.net/25753/carrot-cake-recipe/">HERE</a> 
+      Picture sourced <a href="https://bakewithshivesh.com/wholewhearcarrotcakeandcreamcheesefrosting/">HERE.</a>
+      <p>Thank you!</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
